@@ -20,7 +20,8 @@ public class PlayerMovment : MonoBehaviour
         float oldX = transform.position.x;
         float oldY = transform.position.y;
 
-
+        if (Input.GetKeyDown("w"))
+            dash();
         direction = jsMovement.InputDirection; //InputDirection can be used as per the need of your project
 
         if (direction.magnitude != 0)
@@ -127,8 +128,23 @@ public class PlayerMovment : MonoBehaviour
     }
     public void dash()
     {
+        
         transform.position += direction * 2;
         Debug.Log("Hello");
+    }
+    public void hitbox()
+    {
+        int i = 0;
+        if (i == 0)
+        {
+            hitArea.active = false;
+            i = 1;
+        }
+        else if (i == 1)
+        {
+            hitArea.active = true;
+            i = 0;
+        }
     }
     public void attack()
     {
