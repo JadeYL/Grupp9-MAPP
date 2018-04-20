@@ -9,7 +9,10 @@ public class PlayerMovment : MonoBehaviour
     public GameObject hitArea;
     private int facingDirection;
     public Animation attackAnimation;
-
+    private int i = 0;
+    float placeholderX;
+    float placeholderY;
+    Vector3 lastDirection;
 
 
 
@@ -20,61 +23,83 @@ public class PlayerMovment : MonoBehaviour
         float oldX = transform.position.x;
         float oldY = transform.position.y;
 
-        if (Input.GetKeyDown("w"))
-            dash();
-        direction = jsMovement.InputDirection; //InputDirection can be used as per the need of your project
 
+        if (Input.GetKeyDown("w"))
+        {
+            dash();
+        }
+        direction = jsMovement.InputDirection;
+        if (direction.x != 0 && direction.y != 0)
+        {
+           lastDirection = direction;
+        }
+        
+
+
+        /*
+     /   if (direction.x > 0 || direction.x < 0)
+        {
+           placeholderX = 1 - direction.x;
+        }
+        if (direction.y > 0 || direction.y <0)
+        {
+            placeholderY = 1 - direction.y;
+        }
+        */
+       // direction.x += placeholderX;
+        //direction.y += placeholderY;
         if (direction.magnitude != 0)
         {
+
             transform.position += direction * moveSpeed;
             jsMovement.angle = Mathf.Atan2((transform.position.x - oldX), (transform.position.y - oldY)) * Mathf.Rad2Deg;
-            Debug.Log(jsMovement.angle);    
+            Debug.Log(direction);    
             if (jsMovement.angle > -67 && jsMovement.angle < -22)
             {
-                Debug.Log("NorthWest");
+                //Debug.Log("NorthWest");
                 this.GetComponent<SpriteRenderer>().sprite = NORTHWEST;
                 switchArea(1);
             }       
          
             else if (jsMovement.angle > -22 && jsMovement.angle < 22)
             {
-                Debug.Log("North");
+              //  Debug.Log("North");
                 this.GetComponent<SpriteRenderer>().sprite = NORTH;
                 switchArea(2);
             }
             else if (jsMovement.angle > 22 && jsMovement.angle < 67)
             {
-                Debug.Log("NorthEast");
+            //    Debug.Log("NorthEast");
                 this.GetComponent<SpriteRenderer>().sprite = NORTHEAST;
                 switchArea(3);
             }
             else if (jsMovement.angle > -112 && jsMovement.angle < -67)
             {
-                Debug.Log("West");
+                //Debug.Log("West");
                 this.GetComponent<SpriteRenderer>().sprite = WEST;
                 switchArea(4);
             }
             else if (jsMovement.angle > 67 && jsMovement.angle < 112)
             {
-                Debug.Log("East");
+                //Debug.Log("East");
                 this.GetComponent<SpriteRenderer>().sprite = EAST;
                 switchArea(5);
             }
             else if (jsMovement.angle > -157 && jsMovement.angle < -112)
             {
-                Debug.Log("SouthWest");
+                //Debug.Log("SouthWest");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTHWEST;
                 switchArea(6);
             }
             else if (jsMovement.angle > 157 || jsMovement.angle <= (-157))
             {
-                Debug.Log("South");
+                //Debug.Log("South");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTH;
                 switchArea(7);
             }
             else if (jsMovement.angle > 112 && jsMovement.angle < 156)
             {
-                Debug.Log("SouthEast");
+               // Debug.Log("SouthEast");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTHEAST;
                 switchArea(8);
             }
@@ -129,12 +154,12 @@ public class PlayerMovment : MonoBehaviour
     public void dash()
     {
         
-        transform.position += direction * 2;
+        transform.position += lastDirection * 1;
         Debug.Log("Hello");
     }
     public void hitbox()
     {
-        int i = 0;
+        
         if (i == 0)
         {
             hitArea.active = false;

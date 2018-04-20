@@ -21,16 +21,12 @@ public class VJHandler : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointe
         Vector2 position = Vector2.zero;
 
         //To get InputDirection
-        RectTransformUtility.ScreenPointToLocalPointInRectangle
-                (joystickContainer.rectTransform,
-                ped.position,
-                ped.pressEventCamera,
-                out position);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickContainer.rectTransform,ped.position,ped.pressEventCamera,out position);
 
 
         // FIXAR SÅ ATT MAN KAN STYRA HASTIGHETEN
-       // position.x = (position.x / jsContainer.rectTransform.sizeDelta.x);
-       // position.y = (position.y / jsContainer.rectTransform.sizeDelta.y);
+        position.x = (position.x / joystickContainer.rectTransform.sizeDelta.x);
+        position.y = (position.y / joystickContainer.rectTransform.sizeDelta.y);
 
         float x = (joystickContainer.rectTransform.pivot.x == 1f) ? position.x * 2 + 1 : position.x * 2 - 1;
         float y = (joystickContainer.rectTransform.pivot.y == 1f) ? position.y * 2 + 1 : position.y * 2 - 1;
