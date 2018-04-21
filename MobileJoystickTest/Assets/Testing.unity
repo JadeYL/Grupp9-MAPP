@@ -1174,6 +1174,7 @@ GameObject:
   - component: {fileID: 2028781456}
   - component: {fileID: 2028781455}
   - component: {fileID: 2028781458}
+  - component: {fileID: 2028781459}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1279,7 +1280,27 @@ MonoBehaviour:
   SOUTH: {fileID: 21300008, guid: 36f24fcbea325124f8c1fc5d2e738a10, type: 3}
   SOUTHEAST: {fileID: 21300012, guid: 36f24fcbea325124f8c1fc5d2e738a10, type: 3}
   hitArea: {fileID: 1402054724}
-  attackAnimation: {fileID: 0}
+  rb: {fileID: 2028781459}
+--- !u!50 &2028781459
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028781454}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2113286460
 GameObject:
   m_ObjectHideFlags: 0

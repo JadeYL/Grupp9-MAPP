@@ -8,12 +8,15 @@ public class PlayerMovment : MonoBehaviour
     public Sprite NORTHWEST, NORTH, NORTHEAST, WEST, EAST, SOUTHWEST, SOUTH, SOUTHEAST;
     public GameObject hitArea;
     private int facingDirection;
-    public Animation attackAnimation;
     private int i = 0;
+    private int i2 = 0;
     float placeholderX;
     float placeholderY;
     Vector3 lastDirection;
-
+    public Rigidbody2D rb;
+    Vector3 targetDash;
+    bool isDashing = false;
+    
 
 
 
@@ -22,90 +25,50 @@ public class PlayerMovment : MonoBehaviour
 
         float oldX = transform.position.x;
         float oldY = transform.position.y;
+      
 
-
-        if (Input.GetKeyDown("w"))
-        {
-            dash();
-        }
+       
         direction = jsMovement.InputDirection;
         if (direction.x != 0 && direction.y != 0)
         {
            lastDirection = direction;
         }
-        
+        targetDash = direction * 2;
 
 
-        /*
-     /   if (direction.x > 0 || direction.x < 0)
+        if (Input.GetKeyDown("w"))
         {
-           placeholderX = 1 - direction.x;
+         
+            dash();
+
         }
-        if (direction.y > 0 || direction.y <0)
-        {
-            placeholderY = 1 - direction.y;
-        }
-        */
-       // direction.x += placeholderX;
-        //direction.y += placeholderY;
+
         if (direction.magnitude != 0)
         {
-
             transform.position += direction * moveSpeed;
             jsMovement.angle = Mathf.Atan2((transform.position.x - oldX), (transform.position.y - oldY)) * Mathf.Rad2Deg;
-            Debug.Log(direction);    
-            if (jsMovement.angle > -67 && jsMovement.angle < -22)
-            {
-                //Debug.Log("NorthWest");
-                this.GetComponent<SpriteRenderer>().sprite = NORTHWEST;
-                switchArea(1);
-            }       
-         
-            else if (jsMovement.angle > -22 && jsMovement.angle < 22)
-            {
-              //  Debug.Log("North");
-                this.GetComponent<SpriteRenderer>().sprite = NORTH;
-                switchArea(2);
-            }
-            else if (jsMovement.angle > 22 && jsMovement.angle < 67)
-            {
-            //    Debug.Log("NorthEast");
-                this.GetComponent<SpriteRenderer>().sprite = NORTHEAST;
-                switchArea(3);
-            }
-            else if (jsMovement.angle > -112 && jsMovement.angle < -67)
-            {
-                //Debug.Log("West");
-                this.GetComponent<SpriteRenderer>().sprite = WEST;
-                switchArea(4);
-            }
-            else if (jsMovement.angle > 67 && jsMovement.angle < 112)
-            {
-                //Debug.Log("East");
-                this.GetComponent<SpriteRenderer>().sprite = EAST;
-                switchArea(5);
-            }
-            else if (jsMovement.angle > -157 && jsMovement.angle < -112)
-            {
-                //Debug.Log("SouthWest");
-                this.GetComponent<SpriteRenderer>().sprite = SOUTHWEST;
-                switchArea(6);
-            }
-            else if (jsMovement.angle > 157 || jsMovement.angle <= (-157))
-            {
-                //Debug.Log("South");
-                this.GetComponent<SpriteRenderer>().sprite = SOUTH;
-                switchArea(7);
-            }
-            else if (jsMovement.angle > 112 && jsMovement.angle < 156)
-            {
-               // Debug.Log("SouthEast");
-                this.GetComponent<SpriteRenderer>().sprite = SOUTHEAST;
-                switchArea(8);
-            }
+            calculateAngle();
         }
 
     }
+    void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            i2++;
+            if (i2 == 6)
+            {
+                rb.velocity = Vector2.zero;
+                isDashing = false;
+                i2 = 0;
+            }
+                
+        
+
+        }
+    }
+
+
     public void switchArea(int direction)
     {
         switch (direction)
@@ -151,11 +114,69 @@ public class PlayerMovment : MonoBehaviour
         }
             
     }
+    public void calculateAngle()
+    {
+        if (direction.magnitude != 0)
+        {
+
+            //  
+            if (jsMovement.angle > -67 && jsMovement.angle < -22)
+            {
+                //Debug.Log("NorthWest");
+                this.GetComponent<SpriteRenderer>().sprite = NORTHWEST;
+                switchArea(1);
+            }
+
+            else if (jsMovement.angle > -22 && jsMovement.angle < 22)
+            {
+                //  Debug.Log("North");
+                this.GetComponent<SpriteRenderer>().sprite = NORTH;
+                switchArea(2);
+            }
+            else if (jsMovement.angle > 22 && jsMovement.angle < 67)
+            {
+                //    Debug.Log("NorthEast");
+                this.GetComponent<SpriteRenderer>().sprite = NORTHEAST;
+                switchArea(3);
+            }
+            else if (jsMovement.angle > -112 && jsMovement.angle < -67)
+            {
+                //Debug.Log("West");
+                this.GetComponent<SpriteRenderer>().sprite = WEST;
+                switchArea(4);
+            }
+            else if (jsMovement.angle > 67 && jsMovement.angle < 112)
+            {
+                //Debug.Log("East");
+                this.GetComponent<SpriteRenderer>().sprite = EAST;
+                switchArea(5);
+            }
+            else if (jsMovement.angle > -157 && jsMovement.angle < -112)
+            {
+                //Debug.Log("SouthWest");
+                this.GetComponent<SpriteRenderer>().sprite = SOUTHWEST;
+                switchArea(6);
+            }
+            else if (jsMovement.angle > 157 || jsMovement.angle <= (-157))
+            {
+                //Debug.Log("South");
+                this.GetComponent<SpriteRenderer>().sprite = SOUTH;
+                switchArea(7);
+            }
+            else if (jsMovement.angle > 112 && jsMovement.angle < 156)
+            {
+                // Debug.Log("SouthEast");
+                this.GetComponent<SpriteRenderer>().sprite = SOUTHEAST;
+                switchArea(8);
+            }
+        }
+    }
     public void dash()
     {
-        
-        transform.position += lastDirection * 1;
-        Debug.Log("Hello");
+
+        isDashing = true;
+       
+        rb.velocity = direction * 6f;
     }
     public void hitbox()
     {
@@ -170,11 +191,6 @@ public class PlayerMovment : MonoBehaviour
             hitArea.active = true;
             i = 0;
         }
-    }
-    public void attack()
-    {
-        attackAnimation.wrapMode = WrapMode.Once;
-        attackAnimation.Play();
     }
     void Start()
     {
