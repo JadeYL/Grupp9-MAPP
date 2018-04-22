@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 public class PlayerMovment : MonoBehaviour
 {
     public float moveSpeed = 05f;
@@ -16,6 +17,10 @@ public class PlayerMovment : MonoBehaviour
     public Rigidbody2D rb;
     Vector3 targetDash;
     bool isDashing = false;
+    bool dashingOnCooldown = false;
+    public float dashCooldown = 4;
+    public Text dashButton;
+    
     
 
 
@@ -25,7 +30,7 @@ public class PlayerMovment : MonoBehaviour
 
         float oldX = transform.position.x;
         float oldY = transform.position.y;
-      
+        Debug.Log(dashCooldown);
 
        
         direction = jsMovement.InputDirection;
@@ -34,7 +39,18 @@ public class PlayerMovment : MonoBehaviour
            lastDirection = direction;
         }
         targetDash = direction * 2;
-
+        if (dashingOnCooldown == true)
+        {
+            dashCooldown -= Time.deltaTime;
+            int tempNum = (int)dashCooldown + 1;
+            dashButton.text = tempNum.ToString();
+            if (dashCooldown <= 0)
+            {
+                dashButton.text = "B";
+                dashCooldown = 4;
+                dashingOnCooldown = false;
+            }
+        }
 
         if (Input.GetKeyDown("w"))
         {
@@ -43,7 +59,7 @@ public class PlayerMovment : MonoBehaviour
 
         }
 
-        if (direction.magnitude != 0)
+        if (direction.magnitude != 0 && isDashing == false)
         {
             transform.position += direction * moveSpeed;
             jsMovement.angle = Mathf.Atan2((transform.position.x - oldX), (transform.position.y - oldY)) * Mathf.Rad2Deg;
@@ -56,11 +72,12 @@ public class PlayerMovment : MonoBehaviour
         if (isDashing)
         {
             i2++;
-            if (i2 == 6)
+            if (i2 == 10)
             {
                 rb.velocity = Vector2.zero;
                 isDashing = false;
                 i2 = 0;
+                dashingOnCooldown = true;
             }
                 
         
@@ -173,10 +190,11 @@ public class PlayerMovment : MonoBehaviour
     }
     public void dash()
     {
-
-        isDashing = true;
-       
-        rb.velocity = direction * 6f;
+        if (dashingOnCooldown == false)
+        {
+            isDashing = true;
+            rb.velocity = direction * 10f; 
+        }
     }
     public void hitbox()
     {
@@ -195,5 +213,9 @@ public class PlayerMovment : MonoBehaviour
     void Start()
     {
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
+        float cooldownTime = Time.deltaTime;
     }
 }
+
+
+
