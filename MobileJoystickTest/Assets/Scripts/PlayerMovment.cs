@@ -16,7 +16,7 @@ public class PlayerMovment : MonoBehaviour
     Vector3 lastDirection;
     public Rigidbody2D rb;
     Vector3 targetDash;
-    bool isDashing = false;
+    public bool isDashing = false;
     bool dashingOnCooldown = false;
     public float dashCooldown = 4;
     public Text dashButton;
