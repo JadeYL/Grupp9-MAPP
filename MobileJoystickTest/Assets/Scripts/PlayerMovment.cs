@@ -20,6 +20,7 @@ public class PlayerMovment : MonoBehaviour
     bool dashingOnCooldown = false;
     public float dashCooldown = 4;
     public Text dashButton;
+    public int hp;
     
     
 
@@ -27,10 +28,10 @@ public class PlayerMovment : MonoBehaviour
 
     void Update()
     {
-
+        Debug.Log(hp);
         float oldX = transform.position.x;
         float oldY = transform.position.y;
-        Debug.Log(dashCooldown);
+    
 
        
         direction = jsMovement.InputDirection;
@@ -214,6 +215,7 @@ public class PlayerMovment : MonoBehaviour
     {
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
+        hp = 10;
     }
 }
 
