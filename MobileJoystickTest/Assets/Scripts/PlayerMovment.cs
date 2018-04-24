@@ -21,8 +21,10 @@ public class PlayerMovment : MonoBehaviour
     public float dashCooldown = 4;
     public Text dashButton;
     public int hp;
-    
-    
+    BoxCollider2D lel;
+
+
+
 
 
 
@@ -73,12 +75,15 @@ public class PlayerMovment : MonoBehaviour
         if (isDashing)
         {
             i2++;
+            lel.enabled = !enabled; 
             if (i2 == 10)
             {
+                
                 rb.velocity = Vector2.zero;
                 isDashing = false;
                 i2 = 0;
                 dashingOnCooldown = true;
+                lel.enabled = true;
             }
                 
         
@@ -194,7 +199,7 @@ public class PlayerMovment : MonoBehaviour
         if (dashingOnCooldown == false)
         {
             isDashing = true;
-            rb.velocity = direction * 10f; 
+            rb.velocity = direction * 15f; 
         }
     }
     public void hitbox()
@@ -216,6 +221,7 @@ public class PlayerMovment : MonoBehaviour
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
         hp = 10;
+        lel = this.GetComponent<BoxCollider2D>();
     }
 }
 
