@@ -30,7 +30,7 @@ public class PlayerMovment : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(hp);
+       // Debug.Log(hp);
         float oldX = transform.position.x;
         float oldY = transform.position.y;
     

@@ -8,13 +8,14 @@ public class MeleeEnemy : MonoBehaviour
     //public GameObject player;
     PlayerMovment playerScript;
     public GameObject player;
-    Vector3 targetPos;
+    public  Vector3 targetPos;
     Vector3 oldtarget;
     PolygonCollider2D hitBox;
     bool attacking;
     float time;
     float angle;
-    public int maxDistance;
+    public float maxDistance;
+    public float minDistance;
 
     // Use this for initialization
     void Start()
@@ -32,7 +33,7 @@ public class MeleeEnemy : MonoBehaviour
         targetPos.x = player.transform.position.x - transform.position.x;
         targetPos.y = player.transform.position.y - transform.position.y;
 
-        if (targetPos.x < maxDistance || targetPos.y < maxDistance)
+        if (targetPos.x < maxDistance && targetPos.y < maxDistance && targetPos.x > minDistance && targetPos.y > minDistance)
         {
             if (targetPos.x < 0)
             {
@@ -44,13 +45,14 @@ public class MeleeEnemy : MonoBehaviour
             }
             if (attacking == false)
             {
-                transform.position += targetPos * 0.5f * Time.deltaTime;
+               targetPos = targetPos.normalized;
+                transform.position += targetPos * 1f * Time.deltaTime;
             }
         }
     }
     public void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(time);
+       // Debug.Log(time);
         if (collision.gameObject.CompareTag("Player"))
         {
             attacking = true;
