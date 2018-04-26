@@ -11,6 +11,7 @@ public class TreeBossController : MonoBehaviour {
     public int hp;
     float rootTimer;
     float leafTimer;
+    float phaseTimer;
     bool vulnerable;
     bool playerInArea;
     float x, y;
@@ -22,13 +23,16 @@ public class TreeBossController : MonoBehaviour {
         playerInArea = false;
         rootTimer = 3f;
         leafTimer = 0.5f;
-	}
+        x = -0.8f;
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if (playerInArea)
         {
             //Debug.Log(time);
+            phaseTimer += Time.deltaTime;
             leafTimer -= Time.deltaTime;
             rootTimer -= Time.deltaTime;
             if (rootTimer <= 0)
@@ -39,13 +43,35 @@ public class TreeBossController : MonoBehaviour {
                 }
                 rootTimer = 3f;
             }
-            if(leafTimer<=0)
+
+            if (phaseTimer <= 15)
             {
-                shootLeaf();
-                leafTimer = 0.5f;
+                if (leafTimer <= 0)
+                {
+                    shootLeaf1();
+                    leafTimer = 0.2f;
+                    if (x > 0.7)
+                    {
+                        x = (-0.8f);
+                    }
+                }
+            }
+            else if (phaseTimer > 20 && phaseTimer <35)
+            {
+                if (leafTimer <= 0)
+                {
+                    shootLeaf2();
+                    leafTimer = 2f;
+                }
+            
+            }
+            else if (phaseTimer > 35)
+            {
+                
+                phaseTimer = 0f;
             }
         }
-        Debug.Log(playerInArea);
+        Debug.Log(phaseTimer);
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -55,16 +81,25 @@ public class TreeBossController : MonoBehaviour {
     {
         playerInArea = false;
     }
-    private void shootLeaf()
+    private void shootLeaf1()
     {
+
             
-            x += 0.1f;
             shooter.transform.localPosition = new Vector3(x, -0.1f, 0);
-            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity,shooter.transform);
-            leafClone.velocity = new Vector3(0, -5, 0) * 2f;
-            
+            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity);
+            leafClone.velocity = new Vector3(0, -5, 0) * 0.5f;
+            x += 0.2f;
         
 
+    }
+    private void shootLeaf2()
+    {
+        shooter.transform.localPosition = new Vector3(0, 0.1f, 0);
+        for (int i = -16; i <16 ; i+=2)
+        {
+            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity);
+            leafClone.velocity = new Vector3(i, -5, 0) * 0.5f;
+        }
     }
     private void spawnRoot()
     {
@@ -73,5 +108,6 @@ public class TreeBossController : MonoBehaviour {
         Instantiate(root,this.transform);
         root.transform.position = new Vector3(x, y, 0);
     }
+        
 
 }
