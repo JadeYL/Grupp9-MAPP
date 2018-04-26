@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b30701abb9d0cf0428dd1a5721f50091
-timeCreated: 1524741485
+timeCreated: 1524750466
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,7 +14,7 @@ TextureImporter:
     21300014: Grass8
     21300016: Grass9
     21300018: Grass10
-    21300020: Ground Assets_0
+    21300020: smallGrass1
     21300022: rubble1
     21300024: rubble2
     21300026: rubble3
@@ -25,6 +25,13 @@ TextureImporter:
     21300036: darkMatter2
     21300038: darkMatter3
     21300040: darkMatter4
+    21300042: rubble7
+    21300044: smallGrass2
+    21300046: smallGrass3
+    21300048: smallGrass4
+    21300050: smallGrass5
+    21300052: smallGrass6
+    21300054: smallGrass7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -106,7 +113,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -120,7 +131,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -134,7 +149,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -148,7 +167,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -162,7 +185,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -176,7 +203,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -190,7 +221,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -204,7 +239,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6.7089844, y: 8.784996}
+        - {x: -9.556366, y: 6.023226}
+        - {x: -9.659119, y: 0.6664133}
+        - {x: -8.003662, y: -2.0378895}
+        - {x: -4.0129395, y: -4.8316407}
+        - {x: -0.01083374, y: -4.851461}
+        - {x: 2.8200989, y: -3.028615}
+        - {x: 4.233856, y: 1.2203493}
+        - {x: 2.6268616, y: 5.1237717}
+        - {x: -2.6331787, y: 8.67573}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -218,7 +263,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -232,11 +281,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -12.5, y: 12.5}
+        - {x: -12.5, y: -12.5}
+        - {x: 12.5, y: -12.5}
+        - {x: 12.5, y: 12.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Ground Assets_0
+      name: smallGrass1
       rect:
         serializedVersion: 2
         x: 57
@@ -246,7 +299,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: 7}
+        - {x: -7, y: -7}
+        - {x: 7, y: -7}
+        - {x: 7, y: 7}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -258,9 +315,16 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -1, y: 4}
+        - {x: -4, y: 2}
+        - {x: -4, y: -2}
+        - {x: -2, y: -4}
+        - {x: 0, y: -4}
+        - {x: 4, y: -2}
+        - {x: 4, y: 4}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -272,9 +336,13 @@ TextureImporter:
         width: 5
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -2.5, y: 3.5}
+        - {x: -2.5, y: -3.5}
+        - {x: 2.5, y: -3.5}
+        - {x: 2.5, y: 3.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -286,9 +354,14 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -3, y: 3}
+        - {x: -3, y: -3}
+        - {x: 2, y: -3}
+        - {x: 3, y: -2}
+        - {x: 3, y: 3}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -300,9 +373,15 @@ TextureImporter:
         width: 8
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -3, y: 4.5}
+        - {x: -4, y: 3.5}
+        - {x: -4, y: -4.5}
+        - {x: 4, y: -4.5}
+        - {x: 4, y: 3.5}
+        - {x: 3, y: 4.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -314,9 +393,15 @@ TextureImporter:
         width: 10
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -2, y: 10}
+        - {x: -5, y: 9}
+        - {x: -5, y: -9}
+        - {x: -2, y: -10}
+        - {x: 5, y: -10}
+        - {x: 5, y: 10}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -328,9 +413,15 @@ TextureImporter:
         width: 8
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -4, y: 9.5}
+        - {x: -4, y: -9.5}
+        - {x: 1, y: -9.5}
+        - {x: 4, y: -8.5}
+        - {x: 4, y: 7.5}
+        - {x: 1, y: 9.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -342,9 +433,14 @@ TextureImporter:
         width: 12
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: 5}
+        - {x: -6, y: -5}
+        - {x: 6, y: -5}
+        - {x: 6, y: 4}
+        - {x: 5, y: 5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -356,9 +452,20 @@ TextureImporter:
         width: 10
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 1, y: 2}
+        - {x: 0, y: 1}
+        - {x: 0, y: -1}
+        - {x: 1, y: -2}
+        - {x: 5, y: -2}
+        - {x: 5, y: 2}
+      - - {x: -5, y: 2}
+        - {x: -5, y: -2}
+        - {x: -2, y: -2}
+        - {x: 0, y: 0}
+        - {x: 0, y: 2}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -370,9 +477,13 @@ TextureImporter:
         width: 5
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -2.5, y: 1.5}
+        - {x: -2.5, y: -1.5}
+        - {x: 2.5, y: -1.5}
+        - {x: 2.5, y: 1.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -383,6 +494,108 @@ TextureImporter:
         y: 142
         width: 15
         height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 2.5}
+        - {x: -7.5, y: -2.5}
+        - {x: 7.5, y: -2.5}
+        - {x: 7.5, y: 2.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rubble7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 127
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 83
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 55
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass4
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 55
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass5
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 28
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 57
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: smallGrass7
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 89
+        width: 10
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
