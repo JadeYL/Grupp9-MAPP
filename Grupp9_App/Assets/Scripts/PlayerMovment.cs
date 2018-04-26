@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class PlayerMovment : MonoBehaviour
 {
-    public float moveSpeed = 05f;
+    public float moveSpeed;
     public JoystickHandler jsMovement;
     private Vector3 direction;
     public Sprite NORTHWEST, NORTH, NORTHEAST, WEST, EAST, SOUTHWEST, SOUTH, SOUTHEAST;
@@ -196,25 +196,10 @@ public class PlayerMovment : MonoBehaviour
             rb.velocity = direction * 15f; 
         }
     }
-/*    public void hitbox()
-    {
-        
-        if (i == 0)
-        {
-            hitArea.active = false;
-            i = 1;
-        }
-        else if (i == 1)
-        {
-            hitArea.active = true;
-            i = 0;
-        }
-    } */
     void Start()
     {
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
-        hp = 10;
         colliderbox = this.GetComponent<BoxCollider2D>();
     }
 }

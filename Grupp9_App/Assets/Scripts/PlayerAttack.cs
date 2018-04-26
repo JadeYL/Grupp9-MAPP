@@ -8,12 +8,13 @@ public class PlayerAttack : MonoBehaviour {
     bool attacking;
     public float cd = 0.2f;
     bool onCD;
-    List<GameObject> targets = new List<GameObject>(); 
+    List<GameObject> targets = new List<GameObject>();
 
     // Use this for initialization
-    void Awake() {
+    void Awake()
+    {
         onCD = false;
-           }
+    }
 
     // Update is called once per frame
     void FixedUpdate() {
@@ -24,13 +25,16 @@ public class PlayerAttack : MonoBehaviour {
             onCD = true;
             attacking = false;
             cd -= Time.deltaTime;
+           
         }
         else if (cd <= 0)
         {
+            GetComponentInParent<PlayerMovment>().moveSpeed = 0.07f;
             onCD = false;
             if (Input.GetKeyDown("e"))
             {
                 attack();
+                GetComponentInParent<PlayerMovment>().moveSpeed = 0.02f;
             }
             if (attacking == true )
             {
@@ -71,7 +75,7 @@ public class PlayerAttack : MonoBehaviour {
     public void attack()
     {
             attacking = true;
-         
+            
     }
 
 }

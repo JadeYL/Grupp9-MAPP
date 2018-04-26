@@ -11,11 +11,12 @@ public class EnemyHealth : MonoBehaviour {
 	void Start ()
     {
         hit = false;
-      sR = GetComponent<SpriteRenderer>();
+     // sR = GetComponent<SpriteRenderer>();
     }
 	
 	// Update is called once per frame
 	void Update () {
+        sR = GetComponent<SpriteRenderer>();
         time -= Time.deltaTime;
         if(time <= 0)
         {
@@ -29,7 +30,10 @@ public class EnemyHealth : MonoBehaviour {
         {
             time = 0.1f;
             sR.color = Color.red;
-        //    transform.position += -gameObject.GetComponent<MeleeEnemy>().targetPos.normalized * 0.2f;
+            if (gameObject.GetComponent<MeleeEnemy>() == true)
+            {
+                transform.position += -gameObject.GetComponent<MeleeEnemy>().targetPos.normalized * 0.2f;
+            }
             hit = false;
         }
         

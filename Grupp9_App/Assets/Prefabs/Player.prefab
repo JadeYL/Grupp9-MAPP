@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30ff8a45af8688646a7e5d539819d401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.07
+  moveSpeed: 0.1
   jsMovement: {fileID: 0}
   NORTHWEST: {fileID: 21300000, guid: 36f24fcbea325124f8c1fc5d2e738a10, type: 3}
   NORTH: {fileID: 21300002, guid: 36f24fcbea325124f8c1fc5d2e738a10, type: 3}
