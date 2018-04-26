@@ -1,43 +1,82 @@
 fileFormatVersion: 2
-guid: e5edb10e5f521794b837fb03153ef0ac
-timeCreated: 1524573030
+guid: b07e0b6d13a7d94408488ec8cea3bf45
+timeCreated: 1524741674
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Grass3
-    21300002: Grass4
-    21300004: Grass2
-    21300006: Grass5
-    21300008: Grass6
-    21300010: Grass7
-    21300012: Grass8
-    21300014: Grass9
-    21300016: Grass10
-    21300018: Grass11
-    21300020: Grass12
-    21300022: Grass13
-    21300024: Grass14
-    21300026: Grass15
-    21300028: Grass16
-    21300030: Grass17
-    21300032: Grass18
-    21300034: Grass19
-    21300036: Grass20
-    21300038: Grass21
-    21300040: Grass22
-    21300042: Grass23
-    21300044: Grass24
-    21300046: Stone1
-    21300048: Stone2
-    21300050: Stone3
-    21300052: Stone4
-    21300054: Stone5
-    21300056: Stone6
-    21300058: Stone7
-    21300060: Player
-    21300062: Tree1
-    21300064: Tree2
-    21300066: Tree3
+    21300000: Arm
+    21300002: Game Sprites - Grupp 9_1
+    21300004: Game Sprites - Grupp 9_2
+    21300006: Game Sprites - Grupp 9_3
+    21300008: Game Sprites - Grupp 9_4
+    21300010: Game Sprites - Grupp 9_5
+    21300012: Game Sprites - Grupp 9_6
+    21300014: Game Sprites - Grupp 9_7
+    21300016: Game Sprites - Grupp 9_8
+    21300018: Game Sprites - Grupp 9_9
+    21300020: Game Sprites - Grupp 9_10
+    21300022: Game Sprites - Grupp 9_11
+    21300024: Game Sprites - Grupp 9_12
+    21300026: Game Sprites - Grupp 9_13
+    21300028: Game Sprites - Grupp 9_14
+    21300030: Game Sprites - Grupp 9_15
+    21300032: Game Sprites - Grupp 9_16
+    21300034: Game Sprites - Grupp 9_17
+    21300036: Game Sprites - Grupp 9_18
+    21300038: Game Sprites - Grupp 9_19
+    21300040: Game Sprites - Grupp 9_20
+    21300042: Game Sprites - Grupp 9_21
+    21300044: Game Sprites - Grupp 9_22
+    21300046: Game Sprites - Grupp 9_23
+    21300048: Game Sprites - Grupp 9_24
+    21300050: Game Sprites - Grupp 9_25
+    21300052: Game Sprites - Grupp 9_26
+    21300054: Game Sprites - Grupp 9_27
+    21300056: Game Sprites - Grupp 9_28
+    21300058: Game Sprites - Grupp 9_29
+    21300060: Game Sprites - Grupp 9_30
+    21300062: Game Sprites - Grupp 9_31
+    21300064: Game Sprites - Grupp 9_32
+    21300066: Game Sprites - Grupp 9_33
+    21300068: Game Sprites - Grupp 9_34
+    21300070: Game Sprites - Grupp 9_35
+    21300072: Game Sprites - Grupp 9_36
+    21300074: Game Sprites - Grupp 9_37
+    21300076: Game Sprites - Grupp 9_38
+    21300078: Game Sprites - Grupp 9_39
+    21300080: Game Sprites - Grupp 9_40
+    21300082: Game Sprites - Grupp 9_41
+    21300084: Game Sprites - Grupp 9_42
+    21300086: Game Sprites - Grupp 9_43
+    21300088: Game Sprites - Grupp 9_44
+    21300090: Game Sprites - Grupp 9_45
+    21300092: Game Sprites - Grupp 9_46
+    21300094: Game Sprites - Grupp 9_47
+    21300096: Game Sprites - Grupp 9_48
+    21300098: Game Sprites - Grupp 9_49
+    21300100: Game Sprites - Grupp 9_50
+    21300102: Game Sprites - Grupp 9_51
+    21300104: Game Sprites - Grupp 9_52
+    21300106: Game Sprites - Grupp 9_53
+    21300108: Game Sprites - Grupp 9_54
+    21300110: Game Sprites - Grupp 9_55
+    21300112: Game Sprites - Grupp 9_56
+    21300114: Game Sprites - Grupp 9_57
+    21300116: TreeMonster
+    21300118: Game Sprites - Grupp 9_59
+    21300120: Game Sprites - Grupp 9_60
+    21300122: Seed
+    21300124: Game Sprites - Grupp 9_62
+    21300126: Game Sprites - Grupp 9_63
+    21300128: Game Sprites - Grupp 9_64
+    21300130: Game Sprites - Grupp 9_65
+    21300132: Game Sprites - Grupp 9_66
+    21300134: Game Sprites - Grupp 9_67
+    21300136: Game Sprites - Grupp 9_68
+    21300138: Game Sprites - Grupp 9_69
+    21300140: Game Sprites - Grupp 9_70
+    21300142: Game Sprites - Grupp 9_71
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -91,431 +130,69 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grass3
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 344
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass4
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 344
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 344
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass5
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 344
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass6
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 344
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass7
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 319
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass8
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 319
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass9
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 319
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass10
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 319
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass11
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 319
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass12
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 319
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass13
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 294
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass14
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 294
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass15
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 294
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass16
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 294
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass17
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 294
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass18
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 294
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass19
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 270
-        width: 25
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass20
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 270
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass21
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 270
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass22
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 270
-        width: 25
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass23
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 270
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Grass24
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 270
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone1
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 379
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone2
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 428
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone3
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 379
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone4
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 378
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone5
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 375
-        width: 13
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone6
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 376
-        width: 21
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Stone7
+      name: Arm
       rect:
         serializedVersion: 2
         x: 67
@@ -523,13 +200,405 @@ TextureImporter:
         width: 13
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player
+      name: Game Sprites - Grupp 9_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 428
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 436
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_3
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 436
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 376
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 375
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_6
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 378
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 379
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 379
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 344
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 344
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 344
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 344
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 344
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 319
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 319
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_24
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 319
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_26
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 319
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_28
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 319
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_29
       rect:
         serializedVersion: 2
         x: 5
@@ -537,13 +606,293 @@ TextureImporter:
         width: 13
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Tree1
+      name: Game Sprites - Grupp 9_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 294
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_32
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 294
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_34
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_35
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_36
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 294
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_37
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_38
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 294
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_39
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 294
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_40
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 270
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_42
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 270
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_44
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_45
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_46
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 270
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_47
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_48
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 270
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_49
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 270
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_50
       rect:
         serializedVersion: 2
         x: 36
@@ -551,27 +900,41 @@ TextureImporter:
         width: 63
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Tree2
+      name: Game Sprites - Grupp 9_51
       rect:
         serializedVersion: 2
         x: 107
-        y: 163
+        y: 160
         width: 59
-        height: 91
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Tree3
+      name: Game Sprites - Grupp 9_52
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 105
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_53
       rect:
         serializedVersion: 2
         x: 181
@@ -579,7 +942,259 @@ TextureImporter:
         width: 85
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_54
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 105
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_55
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 105
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_56
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 105
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_57
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 105
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TreeMonster
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 107
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_59
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 27
+        width: 97
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_60
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 75
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Seed
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 75
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_62
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 76
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_63
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 79
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_64
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 41
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_65
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_66
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_67
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_68
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 6
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_69
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 5
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_70
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Game Sprites - Grupp 9_71
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
