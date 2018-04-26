@@ -22,10 +22,11 @@ public class PlayerMovment : MonoBehaviour
     public Text dashButton;
     public int hp;
     BoxCollider2D colliderbox;
+    public bool terrainhit = false;
 
     void Update()
     {
-       // Debug.Log(hp);
+       
         float oldX = transform.position.x;
         float oldY = transform.position.y;
     
@@ -69,7 +70,7 @@ public class PlayerMovment : MonoBehaviour
         if (isDashing)
         {
             i2++;
-            colliderbox.enabled = !enabled; 
+          //  colliderbox.enabled = !enabled; 
             if (i2 == 10)
             {
                 
@@ -77,11 +78,8 @@ public class PlayerMovment : MonoBehaviour
                 isDashing = false;
                 i2 = 0;
                 dashingOnCooldown = true;
-                colliderbox.enabled = true;
+               // colliderbox.enabled = true;
             }
-                
-        
-
         }
     }
 
@@ -201,6 +199,21 @@ public class PlayerMovment : MonoBehaviour
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
         colliderbox = this.GetComponent<BoxCollider2D>();
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Terrain"))
+        {
+            Debug.Log("Triggerd");
+            terrainhit = true;
+           // moveSpeed = 0.01f;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        terrainhit = false;
+        Debug.Log("Out");
+        moveSpeed = 0.05f;
     }
 }
 

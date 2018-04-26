@@ -6,7 +6,7 @@ using System.Linq;
 public class PlayerAttack : MonoBehaviour {
     public float damage;
     bool attacking;
-    public float cd = 0.2f;
+    public float cd;
     bool onCD;
     List<GameObject> targets = new List<GameObject>();
 
@@ -14,10 +14,11 @@ public class PlayerAttack : MonoBehaviour {
     void Awake()
     {
         onCD = false;
+        cd = 0.3f;
     }
 
     // Update is called once per frame
-    void FixedUpdate() {
+    void Update() {
 
         
         if (cd > 0)
@@ -29,12 +30,12 @@ public class PlayerAttack : MonoBehaviour {
         }
         else if (cd <= 0)
         {
-            GetComponentInParent<PlayerMovment>().moveSpeed = 0.07f;
+            GetComponentInParent<PlayerMovment>().moveSpeed = 0.05f;
             onCD = false;
             if (Input.GetKeyDown("e"))
             {
                 attack();
-                GetComponentInParent<PlayerMovment>().moveSpeed = 0.02f;
+                
             }
             if (attacking == true )
             {
@@ -47,9 +48,18 @@ public class PlayerAttack : MonoBehaviour {
                 attacking = false;
                 Debug.Log(attacking);
                 onCD = true;
-                cd = 0.2f;
+                cd = 0.3f;
             }
+            else
+            {
+                if (GetComponentInParent<PlayerMovment>().terrainhit == false)
+                {
+                    
+                }
+            }
+
         }
+        
         
 
     }
@@ -60,7 +70,6 @@ public class PlayerAttack : MonoBehaviour {
         {
             targets.Add(collision.gameObject);
         }
-
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -74,7 +83,8 @@ public class PlayerAttack : MonoBehaviour {
     }
     public void attack()
     {
-            attacking = true;
+        GetComponentInParent<PlayerMovment>().moveSpeed = 0.01f;
+        attacking = true;
             
     }
 

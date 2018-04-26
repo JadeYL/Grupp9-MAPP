@@ -6,7 +6,7 @@ public class ShootingEnemy : MonoBehaviour {
 
     public GameObject player;
     public Rigidbody2D bullet;
-    Vector3 targetPos;
+    public Vector3 targetPos;
     private float time2;
     public float fireRate;
     public float maxDistance;
