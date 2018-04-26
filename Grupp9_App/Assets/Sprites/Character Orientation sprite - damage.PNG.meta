@@ -15,6 +15,7 @@ TextureImporter:
     21300016: ATTACK1
     21300018: ATTACK2
     21300020: ATTACK3
+    21300022: Icon
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -280,6 +281,20 @@ TextureImporter:
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Icon
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 53
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
