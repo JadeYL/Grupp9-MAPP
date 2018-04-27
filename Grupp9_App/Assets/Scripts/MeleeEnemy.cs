@@ -23,14 +23,12 @@ public class MeleeEnemy : MonoBehaviour
         hitBox = this.gameObject.GetComponent<PolygonCollider2D>();
         attacking = false;
         time = 0;
-
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         time += Time.deltaTime;
         targetPos.x = player.transform.position.x - transform.position.x;
         targetPos.y = player.transform.position.y - transform.position.y;

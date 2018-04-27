@@ -34,10 +34,6 @@ public class EnemyHealth : MonoBehaviour {
             {
                 transform.position += -gameObject.GetComponent<MeleeEnemy>().targetPos.normalized * 0.2f;
             }
-            else if (gameObject.GetComponent<ShootingEnemy>() == true)
-            {
-                transform.position += -gameObject.GetComponent<ShootingEnemy>().targetPos.normalized * 0.2f;
-            }
             hit = false;
         }
         

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DieOverTime : MonoBehaviour
 {
-    public float time;
+    float time;
     // Use this for initialization
     void Start()
     {
-        Destroy(this.gameObject, time);
+        Destroy(this.gameObject, 5f);
     }
 }
