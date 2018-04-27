@@ -81,7 +81,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1242287388047252, guid: d32a3af3825a5dc418c31f37bd3b13f2, type: 2}
   bullet: {fileID: 50090802639783530, guid: 7ae4a07a95251e747a9e10a70ccb2eef, type: 2}
-  targetPos: {x: 0, y: 0, z: 0}
   fireRate: 3
   maxDistance: 12
   minDistance: -12
@@ -96,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17d02d058d5864f44b2032660d816b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 2
+  hp: 5
   hit: 0
 --- !u!212 &212467606854475856
 SpriteRenderer:
@@ -107,7 +106,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -123,7 +121,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
