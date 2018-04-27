@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b30701abb9d0cf0428dd1a5721f50091
-timeCreated: 1524750466
+timeCreated: 1524832779
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,6 +32,7 @@ TextureImporter:
     21300050: smallGrass5
     21300052: smallGrass6
     21300054: smallGrass7
+    21300056: rocky boi
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -513,9 +514,16 @@ TextureImporter:
         width: 21
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 9.5, y: 10.5}
+        - {x: -10.5, y: 10.5}
+        - {x: -10.5, y: -10.5}
+        - {x: -0.5, y: -10.5}
+        - {x: 8.5, y: -6.5}
+        - {x: 10.5, y: -4.5}
+        - {x: 10.5, y: 9.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -527,9 +535,13 @@ TextureImporter:
         width: 16
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -8, y: 5}
+        - {x: -8, y: -5}
+        - {x: 8, y: -5}
+        - {x: 8, y: 5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -541,9 +553,13 @@ TextureImporter:
         width: 17
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -8.5, y: 4}
+        - {x: -8.5, y: -4}
+        - {x: 8.5, y: -4}
+        - {x: 8.5, y: 4}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -555,9 +571,13 @@ TextureImporter:
         width: 9
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -4.5, y: 10.5}
+        - {x: -4.5, y: -10.5}
+        - {x: 4.5, y: -10.5}
+        - {x: 4.5, y: 10.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -569,9 +589,13 @@ TextureImporter:
         width: 20
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -10, y: 10.5}
+        - {x: -10, y: -10.5}
+        - {x: 10, y: -10.5}
+        - {x: 10, y: 10.5}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -583,9 +607,13 @@ TextureImporter:
         width: 19
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -9.5, y: 9}
+        - {x: -9.5, y: -9}
+        - {x: 9.5, y: -9}
+        - {x: 9.5, y: 9}
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
@@ -597,9 +625,40 @@ TextureImporter:
         width: 10
         height: 7
       alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 3.5}
+        - {x: -5, y: -3.5}
+        - {x: 5, y: -3.5}
+        - {x: 5, y: 3.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rocky boi
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 55
+        width: 25
+        height: 23
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -2.9711304, y: 7.560158}
+        - {x: -6.996155, y: 4.886566}
+        - {x: -7.799591, y: 1.0597305}
+        - {x: -7.643921, y: -2.7957153}
+        - {x: -6.5224, y: -6.164814}
+        - {x: -5.448181, y: -9.849461}
+        - {x: -0.052490234, y: -11.5}
+        - {x: 8.230469, y: -11.5}
+        - {x: 11.810791, y: -6.003441}
+        - {x: 11.595612, y: 1.9628906}
+        - {x: 10.815582, y: 3.4692993}
+        - {x: 8.772095, y: 7.01355}
+        - {x: 6.7276917, y: 7.835045}
       physicsShape: []
       tessellationDetail: 0
     outline: []
