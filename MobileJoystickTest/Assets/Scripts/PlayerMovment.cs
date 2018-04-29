@@ -21,6 +21,7 @@ public class PlayerMovment : MonoBehaviour
     public float dashCooldown = 4;
     public Text dashButton;
     public int hp;
+    public bool fireOrb = false;
     BoxCollider2D lel;
 
 

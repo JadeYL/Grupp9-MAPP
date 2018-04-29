@@ -8,15 +8,17 @@ public class PlayerAttack : MonoBehaviour {
     bool attacking;
     public float cd = 0.2f;
     bool onCD;
-    List<GameObject> targets = new List<GameObject>(); 
+    List<GameObject> targets = new List<GameObject>();
+    bool fireOrb;
 
     // Use this for initialization
     void Awake() {
         onCD = false;
+        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
            }
 
     // Update is called once per frame
-    void FixedUpdate() {
+    void Update() {
 
         
         if (cd > 0)
@@ -25,7 +27,7 @@ public class PlayerAttack : MonoBehaviour {
             attacking = false;
             cd -= Time.deltaTime;
         }
-        else if (cd <= 0)
+        else if (cd < 0)
         {
             onCD = false;
             if (Input.GetKeyDown("e"))
@@ -38,6 +40,10 @@ public class PlayerAttack : MonoBehaviour {
                 {
                 go.GetComponent<EnemyHealth>().hp -= 1;
                 go.GetComponent<EnemyHealth>().hit = true;
+                    if (fireOrb == true)
+                    {
+                        go.GetComponent<TreeBossController>().hp -= 1;
+                    }
 
                 }
                 attacking = false;
@@ -56,6 +62,7 @@ public class PlayerAttack : MonoBehaviour {
         {
             targets.Add(collision.gameObject);
         }
+
 
     }
     private void OnTriggerExit2D(Collider2D collision)
