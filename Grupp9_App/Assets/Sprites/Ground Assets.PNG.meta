@@ -34,6 +34,16 @@ TextureImporter:
     21300054: smallGrass7
     21300056: rocky boi
     21300058: Stoneblock1
+    21300060: stoneBlock2
+    21300062: stoneBlock3
+    21300064: stoneBlock4
+    21300066: Stoneblock5
+    21300068: stoneBlock6
+    21300070: stoneBlock7
+    21300072: stoneblock8
+    21300074: stoneBlock9
+    21300076: stoneBlock10
+    21300078: stoneBlock11
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -676,6 +686,146 @@ TextureImporter:
         y: 26
         width: 25
         height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 26
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Stoneblock5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 26
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock6
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneblock8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 37
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stoneBlock11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 54
+        width: 18
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
