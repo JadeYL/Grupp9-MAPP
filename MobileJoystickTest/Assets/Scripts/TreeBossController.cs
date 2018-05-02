@@ -15,6 +15,9 @@ public class TreeBossController : MonoBehaviour {
     bool vulnerable;
     bool playerInArea;
     float x, y;
+    float time;
+    public bool hit = false;
+    SpriteRenderer sR;
 
 
     // Use this for initialization
@@ -24,12 +27,19 @@ public class TreeBossController : MonoBehaviour {
         rootTimer = 3f;
         leafTimer = 0.5f;
         x = -0.8f;
-        
+        sR = GetComponent<SpriteRenderer>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (playerInArea)
+        playerInArea = this.transform.Find("TriggerArea").GetComponent<TriggerArea>().playerInArea;
+        time -= Time.deltaTime;
+        if (time <= 0)
+        {
+            sR.color = Color.white;
+        }
+        //  Debug.Log(playerInArea);
+        if (playerInArea)
         {
             //Debug.Log(time);
             phaseTimer += Time.deltaTime;
@@ -63,24 +73,24 @@ public class TreeBossController : MonoBehaviour {
                     shootLeaf2();
                     leafTimer = 2f;
                 }
-            
             }
             else if (phaseTimer > 35)
             {
                 
                 phaseTimer = 0f;
             }
+            if (hit)
+            {
+            sR.color = Color.red;
+            time = 0.1f;
+            hit = false;
+            Debug.Log(hp);
+            }
+
         }
-        Debug.Log(phaseTimer);
+        
 	}
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        playerInArea = true;
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        playerInArea = false;
-    }
+
     private void shootLeaf1()
     {
 
