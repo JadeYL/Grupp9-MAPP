@@ -18,7 +18,6 @@ public class PlayerAttack : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Debug.Log(targets.Count);
         fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
         if (cd > 0)
         {
@@ -36,18 +35,18 @@ public class PlayerAttack : MonoBehaviour {
             }
             if (attacking == true )
             {
-                Debug.Log(fireOrb);
+            
                 foreach (GameObject go in targets)
                 {
-                go.GetComponent<EnemyHealth>().hp -= 1;
-                go.GetComponent<EnemyHealth>().hit = true;
-                
-                    if(fireOrb == true)
+                    if (fireOrb == true)
                     {
-                        Debug.Log("i work!!!");
+                      
                         go.GetComponent<TreeBossController>().hp -= 1;
                         go.GetComponent<TreeBossController>().hit = true;
                     }
+                    Debug.Log("i work!!!");
+                    go.GetComponent<EnemyHealth>().hp -= 1;
+                    go.GetComponent<EnemyHealth>().hit = true;
                 }
                 onCD = true;
                 cd = 0.3f;
@@ -82,7 +81,6 @@ public class PlayerAttack : MonoBehaviour {
     {
             attacking = true;
             i++;
-            Debug.Log(i);
               
          
     }
