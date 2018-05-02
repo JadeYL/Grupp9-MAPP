@@ -23,6 +23,7 @@ public class PlayerMovment : MonoBehaviour
     public int hp;
     public bool fireOrb = false;
     BoxCollider2D lel;
+    public float powerTimer;
 
 
 
@@ -215,6 +216,14 @@ public class PlayerMovment : MonoBehaviour
         {
             hitArea.active = true;
             i = 0;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("FireOrb"))
+        {
+            fireOrb = true;
+            Destroy(collision.gameObject);
         }
     }
     void Start()
