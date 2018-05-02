@@ -6,51 +6,53 @@ using System.Linq;
 public class PlayerAttack : MonoBehaviour {
     public float damage;
     bool attacking;
-    public float cd = 0.2f;
+    public float cd = 0.3f;
     bool onCD;
     List<GameObject> targets = new List<GameObject>();
     bool fireOrb;
+    int i = 0;
 
     // Use this for initialization
     void Awake() {
-        onCD = false;
-        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
            }
 
     // Update is called once per frame
     void Update() {
-
-        
+        Debug.Log(targets.Count);
+        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
         if (cd > 0)
         {
             onCD = true;
             attacking = false;
             cd -= Time.deltaTime;
         }
-        else if (cd < 0)
+        else if (cd <= 0)
         {
             onCD = false;
             if (Input.GetKeyDown("e"))
             {
+                Debug.Log("Hit");
                 attack();
             }
             if (attacking == true )
             {
+                Debug.Log(fireOrb);
                 foreach (GameObject go in targets)
                 {
                 go.GetComponent<EnemyHealth>().hp -= 1;
                 go.GetComponent<EnemyHealth>().hit = true;
-                    if (fireOrb == true)
+                
+                    if(fireOrb == true)
                     {
+                        Debug.Log("i work!!!");
                         go.GetComponent<TreeBossController>().hp -= 1;
+                        go.GetComponent<TreeBossController>().hit = true;
                     }
-
                 }
-                attacking = false;
-                Debug.Log(attacking);
                 onCD = true;
-                cd = 0.2f;
+                cd = 0.3f;
             }
+           
         }
         
 
@@ -62,6 +64,7 @@ public class PlayerAttack : MonoBehaviour {
         {
             targets.Add(collision.gameObject);
         }
+
 
 
     }
@@ -78,6 +81,9 @@ public class PlayerAttack : MonoBehaviour {
     public void attack()
     {
             attacking = true;
+            i++;
+            Debug.Log(i);
+              
          
     }
 

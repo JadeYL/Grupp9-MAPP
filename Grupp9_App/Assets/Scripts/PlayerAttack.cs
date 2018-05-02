@@ -9,11 +9,13 @@ public class PlayerAttack : MonoBehaviour {
     public float cd = 0.2f;
     bool onCD;
     List<GameObject> targets = new List<GameObject>();
+    bool fireOrb;
 
     // Use this for initialization
     void Awake()
     {
         onCD = false;
+        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
     }
 
     // Update is called once per frame
@@ -42,7 +44,10 @@ public class PlayerAttack : MonoBehaviour {
                 {
                 go.GetComponent<EnemyHealth>().hp -= 1;
                 go.GetComponent<EnemyHealth>().hit = true;
-
+                    if(fireOrb == true)
+                    {
+                        go.GetComponent<TreeBossController>().hp -= 1;   
+                    }
                 }
                 attacking = false;
                 Debug.Log(attacking);

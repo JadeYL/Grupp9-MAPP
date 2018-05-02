@@ -22,6 +22,7 @@ public class PlayerMovment : MonoBehaviour
     public Text dashButton;
     public int hp;
     BoxCollider2D colliderbox;
+    public bool fireOrb;
 
     void Update()
     {
@@ -187,6 +188,10 @@ public class PlayerMovment : MonoBehaviour
                 switchArea(8);
             }
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
     }
     public void dash()
     {
