@@ -19,7 +19,7 @@ public class BulletDamage : MonoBehaviour {
         }
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerMovment>().hp -= 1;
+            collision.GetComponent<PlayerHP>().hp -= 1;
             Die();
         }
     }

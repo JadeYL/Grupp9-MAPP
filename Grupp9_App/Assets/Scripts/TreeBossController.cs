@@ -71,7 +71,7 @@ public class TreeBossController : MonoBehaviour {
                 phaseTimer = 0f;
             }
         }
-        Debug.Log(phaseTimer);
+       // Debug.Log(phaseTimer);
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {

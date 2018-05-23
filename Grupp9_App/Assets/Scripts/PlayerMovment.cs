@@ -18,15 +18,15 @@ public class PlayerMovment : MonoBehaviour
     Vector3 targetDash;
     public bool isDashing = false;
     bool dashingOnCooldown = false;
-    public float dashCooldown = 4;
+    public float dashCooldown = 1.5f;
     public Text dashButton;
-    public int hp;
+
+
     BoxCollider2D colliderbox;
     public bool fireOrb;
 
     void Update()
     {
-       // Debug.Log(hp);
         float oldX = transform.position.x;
         float oldY = transform.position.y;
     
@@ -45,7 +45,7 @@ public class PlayerMovment : MonoBehaviour
             if (dashCooldown <= 0)
             {
                 dashButton.text = "B";
-                dashCooldown = 4;
+                dashCooldown = 1.5f;
                 dashingOnCooldown = false;
             }
         }

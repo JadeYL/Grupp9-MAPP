@@ -29,6 +29,7 @@ public class MeleeEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.LookAt(player.transform);
         time += Time.deltaTime;
         targetPos.x = player.transform.position.x - transform.position.x;
         targetPos.y = player.transform.position.y - transform.position.y;
@@ -58,7 +59,7 @@ public class MeleeEnemy : MonoBehaviour
             attacking = true;
             if (time > 1.5f)
             {
-                collision.GetComponent<PlayerMovment>().hp -= 1;
+                collision.GetComponent<PlayerHP>().hp -= 1;
                 time = 0;
             }
         }
