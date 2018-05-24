@@ -24,7 +24,7 @@ public class PlayerMovment : MonoBehaviour
     public bool fireOrb = false;
     BoxCollider2D lel;
     public float powerTimer;
-
+    private Animator anim;
 
 
 
@@ -71,6 +71,7 @@ public class PlayerMovment : MonoBehaviour
             calculateAngle();
         }
 
+        anim.SetBool("moving", direction.x != 0 && direction.y != 0);
     }
     void FixedUpdate()
     {
@@ -232,6 +233,7 @@ public class PlayerMovment : MonoBehaviour
         float cooldownTime = Time.deltaTime;
         hp = 10;
         lel = this.GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
     }
 }
 

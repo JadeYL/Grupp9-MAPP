@@ -942,7 +942,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 0c66706b844d01f498f22e9e4249e300, type: 2}
+      objectReference: {fileID: 9100000, guid: 5d10e64e3ee0c54408333fe8d098f72c, type: 2}
     - target: {fileID: 114383113570435152, guid: d32a3af3825a5dc418c31f37bd3b13f2,
         type: 2}
       propertyPath: jsMovement
