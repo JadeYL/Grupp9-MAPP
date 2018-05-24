@@ -23,14 +23,17 @@ public class TreeBossController : MonoBehaviour {
         playerInArea = false;
         rootTimer = 3f;
         leafTimer = 0.5f;
-        x = -0.8f;
+        phaseTimer = 0;
+        x = -2.4f;
         
     }
 	
 	// Update is called once per frame
 	void Update () {
+        
 		if (playerInArea)
         {
+            Debug.Log("PT: " + phaseTimer + "      LT: " + leafTimer);
             //Debug.Log(time);
             phaseTimer += Time.deltaTime;
             leafTimer -= Time.deltaTime;
@@ -44,15 +47,15 @@ public class TreeBossController : MonoBehaviour {
                 rootTimer = 3f;
             }
 
-            if (phaseTimer <= 15)
+            if (phaseTimer <= 17)
             {
                 if (leafTimer <= 0)
                 {
                     shootLeaf1();
                     leafTimer = 0.2f;
-                    if (x > 0.7)
+                    if (x >= 2.4)
                     {
-                        x = (-0.8f);
+                        x = (-2.4f);
                     }
                 }
             }
@@ -88,7 +91,7 @@ public class TreeBossController : MonoBehaviour {
             shooter.transform.localPosition = new Vector3(x, -0.1f, 0);
             Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity);
             leafClone.velocity = new Vector3(0, -5, 0) * 0.5f;
-            x += 0.2f;
+            x += 0.4f;
         
 
     }
@@ -103,8 +106,8 @@ public class TreeBossController : MonoBehaviour {
     }
     private void spawnRoot()
     {
-        x = Random.Range(-0.5f,0.3f);
-        y = Random.Range(-0.7f,-0.3f);
+        x = Random.Range(-2.4f,1.8f);
+        y = Random.Range(-1.3f,-3f);
         Instantiate(root,this.transform);
         root.transform.position = new Vector3(x, y, 0);
     }

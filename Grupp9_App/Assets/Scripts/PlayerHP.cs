@@ -16,7 +16,7 @@ public class PlayerHP : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(hp);
+
         healthBar.value = hp;
         if (hp <= 0)
         {

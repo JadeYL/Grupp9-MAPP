@@ -44,7 +44,7 @@ public class PlayerMovment : MonoBehaviour
             dashButton.text = tempNum.ToString();
             if (dashCooldown <= 0)
             {
-                dashButton.text = "B";
+                dashButton.text = "Dash";
                 dashCooldown = 1.5f;
                 dashingOnCooldown = false;
             }
