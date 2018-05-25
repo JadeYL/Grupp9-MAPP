@@ -1,26 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class PlayerAttack : MonoBehaviour {
+    public Image powerUpImage;
+    public Text text;
     public float damage;
     bool attacking;
     public float cd = 0.2f;
     bool onCD;
+    float time;
     List<GameObject> targets = new List<GameObject>();
     bool fireOrb;
 
     // Use this for initialization
     void Awake()
     {
+        time = 6;
         onCD = false;
-        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
+        fireOrb = false;
     }
 
     // Update is called once per frame
     void FixedUpdate() {
-
+        Debug.Log(fireOrb);
         
         if (cd > 0)
         {
@@ -46,15 +51,31 @@ public class PlayerAttack : MonoBehaviour {
                 go.GetComponent<EnemyHealth>().hit = true;
                     if(fireOrb == true)
                     {
-                        go.GetComponent<TreeBossController>().hp -= 1;   
+                        go.GetComponent<TreeBossHP>().hp -= 1;
                     }
                 }
                 attacking = false;
-                Debug.Log(attacking);
+
                 onCD = true;
                 cd = 0.2f;
             }
         }
+
+            if (fireOrb == true)
+            {
+                powerUpImage.enabled = true;
+                text.enabled = true;
+                time -= Time.deltaTime;
+                text.text = time.ToString();
+                if (time <= 0)
+                {
+                    powerUpImage.enabled = false;
+                    text.enabled = false;
+                    fireOrb = false;
+                    time = 6;
+                }
+            }
+        
         
 
     }
@@ -64,6 +85,14 @@ public class PlayerAttack : MonoBehaviour {
         if (collision.gameObject.CompareTag("Enemy") && !targets.Contains(collision.gameObject))
         {
             targets.Add(collision.gameObject);
+        }
+        if(collision.gameObject.CompareTag("PowerUp"))
+        {
+            fireOrb = true;
+        }
+        if(collision.gameObject.CompareTag("Boss"))
+        {
+            Debug.Log("Attack");
         }
 
     }

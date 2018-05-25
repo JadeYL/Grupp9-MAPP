@@ -8,6 +8,8 @@ TagManager:
   - MeleeEnemy
   - ShootingEnemy
   - Terrain
+  - PowerUp
+  - Boss
   layers:
   - Default
   - TransparentFX
