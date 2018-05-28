@@ -1,33 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
-public class PlayerAttack : MonoBehaviour {
+public class PlayerAttack : MonoBehaviour
+{
+    private GameObject powerUpImage;
+    private GameObject text;
     public float damage;
     bool attacking;
     public float cd = 0.2f;
     bool onCD;
+    float time;
     List<GameObject> targets = new List<GameObject>();
     bool fireOrb;
+    bool bossAttack;
 
     // Use this for initialization
-    void Awake()
+    void Start()
     {
+        powerUpImage = GameObject.FindGameObjectWithTag("PowerUpIcon");
+        text = GameObject.FindGameObjectWithTag("PowerUpTimer");
+        time = 6;
         onCD = false;
-        fireOrb = GetComponentInParent<PlayerMovment>().fireOrb;
+        fireOrb = false;
+        bossAttack = false;
     }
 
     // Update is called once per frame
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
 
-        
         if (cd > 0)
         {
             onCD = true;
             attacking = false;
             cd -= Time.deltaTime;
-           
+
         }
         else if (cd <= 0)
         {
@@ -38,24 +48,36 @@ public class PlayerAttack : MonoBehaviour {
                 attack();
                 GetComponentInParent<PlayerMovment>().moveSpeed = 0.02f;
             }
-            if (attacking == true )
+            if (attacking == true)
             {
                 foreach (GameObject go in targets)
                 {
-                go.GetComponent<EnemyHealth>().hp -= 1;
-                go.GetComponent<EnemyHealth>().hit = true;
-                    if(fireOrb == true)
-                    {
-                        go.GetComponent<TreeBossController>().hp -= 1;   
-                    }
+                    go.GetComponent<EnemyHealth>().hp -= 1;
+                    go.GetComponent<EnemyHealth>().hit = true;
                 }
                 attacking = false;
-                Debug.Log(attacking);
+
                 onCD = true;
                 cd = 0.2f;
             }
         }
-        
+        if (fireOrb == true)
+        {
+            powerUpImage.SetActive(true);
+            time -= Time.deltaTime;
+            if (time <= 0)
+            {
+                powerUpImage.SetActive(false);
+                fireOrb = false;
+                time = 6;
+            }
+        }
+        else
+        {
+            powerUpImage.SetActive(false);
+        }
+
+
 
     }
 
@@ -65,7 +87,20 @@ public class PlayerAttack : MonoBehaviour {
         {
             targets.Add(collision.gameObject);
         }
-
+        if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            fireOrb = true;
+        }
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            Debug.Log("FIRST ATTACK");
+            if(bossAttack == true)
+            {
+                Debug.Log("SECOND ATTACK");
+                collision.gameObject.GetComponent<TreeBossHP>().hp -= 1;
+                bossAttack = false;
+            }
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -79,8 +114,10 @@ public class PlayerAttack : MonoBehaviour {
     }
     public void attack()
     {
-            attacking = true;
-            
+        attacking = true;
+        if( fireOrb == true)
+            bossAttack = true;
+
     }
 
 }

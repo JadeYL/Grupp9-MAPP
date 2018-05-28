@@ -6,6 +6,7 @@ public class TreeBossController : MonoBehaviour {
 
     public GameObject root;
     public Rigidbody2D leaf;
+    public Rigidbody2D leaf2;
     public GameObject shooter;
     Vector3 shooterPos;
     public int hp;
@@ -13,7 +14,7 @@ public class TreeBossController : MonoBehaviour {
     float leafTimer;
     float phaseTimer;
     bool vulnerable;
-    bool playerInArea;
+    public bool playerInArea;
     float x, y;
 
 
@@ -33,7 +34,6 @@ public class TreeBossController : MonoBehaviour {
         
 		if (playerInArea)
         {
-            Debug.Log("PT: " + phaseTimer + "      LT: " + leafTimer);
             //Debug.Log(time);
             phaseTimer += Time.deltaTime;
             leafTimer -= Time.deltaTime;
@@ -47,7 +47,7 @@ public class TreeBossController : MonoBehaviour {
                 rootTimer = 3f;
             }
 
-            if (phaseTimer <= 17)
+            if (phaseTimer <= 15)
             {
                 if (leafTimer <= 0)
                 {
@@ -68,13 +68,13 @@ public class TreeBossController : MonoBehaviour {
                 }
             
             }
-            else if (phaseTimer > 35)
+            else if (phaseTimer > 39)
             {
                 
                 phaseTimer = 0f;
             }
         }
-       // Debug.Log(phaseTimer);
+
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -89,9 +89,9 @@ public class TreeBossController : MonoBehaviour {
 
             
             shooter.transform.localPosition = new Vector3(x, -0.1f, 0);
-            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity);
+            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(RandomLeaf(), shooter.transform.position, Quaternion.identity);
             leafClone.velocity = new Vector3(0, -5, 0) * 0.5f;
-            x += 0.4f;
+            x += 0.6f;
         
 
     }
@@ -100,16 +100,29 @@ public class TreeBossController : MonoBehaviour {
         shooter.transform.localPosition = new Vector3(0, 0.1f, 0);
         for (int i = -16; i <16 ; i+=2)
         {
-            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(leaf, shooter.transform.position, Quaternion.identity);
+            Rigidbody2D leafClone = (Rigidbody2D)Instantiate(RandomLeaf(), shooter.transform.position, Quaternion.identity);
             leafClone.velocity = new Vector3(i, -5, 0) * 0.5f;
         }
     }
     private void spawnRoot()
     {
         x = Random.Range(-2.4f,1.8f);
-        y = Random.Range(-1.3f,-3f);
+        y = Random.Range(-1.3f,-2.5f);
         Instantiate(root,this.transform);
         root.transform.position = new Vector3(x, y, 0);
+    }
+    Rigidbody2D RandomLeaf()
+    {
+        int rnd = Random.Range(0,3);
+        switch (rnd)
+        {
+            case 1:
+                return leaf;
+            case 2:
+                return leaf2;
+            default:
+                return leaf;
+        }
     }
         
 

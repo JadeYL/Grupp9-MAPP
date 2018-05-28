@@ -8,6 +8,10 @@ TagManager:
   - MeleeEnemy
   - ShootingEnemy
   - Terrain
+  - PowerUp
+  - Boss
+  - PowerUpIcon
+  - PowerUpTImer
   layers:
   - Default
   - TransparentFX
@@ -19,7 +23,7 @@ TagManager:
   - 
   - skiss
   - 
-  - 
+  - Terrain
   - 
   - 
   - 

@@ -17,7 +17,6 @@ public class Roots : MonoBehaviour {
        time += Time.deltaTime;
         if (time > 1f)
         {
-            Debug.Log("HIT!!!");
             root.SetActive(true);
         }
 

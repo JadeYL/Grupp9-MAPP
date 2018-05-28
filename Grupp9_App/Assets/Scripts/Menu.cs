@@ -18,4 +18,8 @@ public class Menu : MonoBehaviour {
         Debug.Log("Quit");
         Application.Quit();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayGame();
+    }
 }

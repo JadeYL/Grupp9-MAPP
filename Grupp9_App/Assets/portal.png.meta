@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 258931111f298554b828c317a58275e7
-timeCreated: 1525258406
+guid: d81903268c03ec64b9e1da96d3ea7b61
+timeCreated: 1527192370
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: FireOrb_0
-    21300002: FireOrb_1
-    21300004: FireOrb_5
-    21300006: FireOrb_6
-    21300008: FireOrb_2
-    21300010: FireOrb_3
-    21300012: FireOrb_4
+    21300000: portal_0
+    21300002: portal_1
+    21300004: portal_2
+    21300006: portal_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -67,7 +64,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -87,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireOrb_0
+      name: portal_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 8
-        height: 19
+        x: 12
+        y: 13
+        width: 122
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,13 +138,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FireOrb_1
+      name: portal_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1
-        width: 9
-        height: 18
+        x: 204
+        y: 13
+        width: 123
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,13 +152,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FireOrb_5
+      name: portal_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1
-        width: 9
-        height: 19
+        x: 397
+        y: 13
+        width: 121
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,55 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: FireOrb_6
+      name: portal_3
       rect:
         serializedVersion: 2
-        x: 149
-        y: 1
-        width: 12
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FireOrb_2
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 1
-        width: 11
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FireOrb_3
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 1
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FireOrb_4
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 1
-        width: 9
-        height: 19
+        x: 570
+        y: 12
+        width: 139
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

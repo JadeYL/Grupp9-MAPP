@@ -29,7 +29,7 @@ public class MeleeEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player.transform);
+     
         time += Time.deltaTime;
         targetPos.x = player.transform.position.x - transform.position.x;
         targetPos.y = player.transform.position.y - transform.position.y;
