@@ -14,7 +14,7 @@ public class TreeBossController : MonoBehaviour {
     float leafTimer;
     float phaseTimer;
     bool vulnerable;
-    bool playerInArea;
+    public bool playerInArea;
     float x, y;
 
 
@@ -74,7 +74,7 @@ public class TreeBossController : MonoBehaviour {
                 phaseTimer = 0f;
             }
         }
-       // Debug.Log(phaseTimer);
+       Debug.Log(phaseTimer);
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -113,7 +113,7 @@ public class TreeBossController : MonoBehaviour {
     }
     Rigidbody2D RandomLeaf()
     {
-        int rnd = Random.Range(0,1);
+        int rnd = Random.Range(0,3);
         switch (rnd)
         {
             case 1:

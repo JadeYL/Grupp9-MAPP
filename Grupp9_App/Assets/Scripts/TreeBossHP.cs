@@ -1,25 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TreeBossHP : MonoBehaviour {
     public  GameObject fireOrb;
+    public GameObject healthBar;
+    private Slider slider;
     bool take;
     float time;
     int onlyOne;
     public int hp;
 	// Use this for initialization
-	void Start () {
-        hp = 10;
+	void Awake () {
+        hp = 20;
         time = 0;
         take = false;
         onlyOne = 0;
-	}
+        slider = healthBar.GetComponent<Slider>();
+        slider.value = hp;
+        healthBar.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(time);
         Debug.Log(hp);
+        if(GetComponentInParent<TreeBossController>().playerInArea == true)
+        {
+            healthBar.SetActive(true);
+            slider.value = hp;
+        }
+        else
+        {
+            healthBar.SetActive(false);
+        }
         if (take == false)
         {
 
@@ -35,11 +49,13 @@ public class TreeBossHP : MonoBehaviour {
             if (time> 16)
             {
                 take = false;
+                 time = 0;
             }
         }
         if(hp <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(transform.parent.gameObject);
         }
+
     }
 }

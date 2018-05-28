@@ -16,13 +16,13 @@ public class PlayerHP : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        
         healthBar.value = hp;
         if (hp <= 0)
         {
             respawn();
         }
-        deathCounter.text = death.ToString();
+      //  deathCounter.text = death.ToString();
 	}
     void respawn(){
         hp = 20;
