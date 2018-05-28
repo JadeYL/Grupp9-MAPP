@@ -8,6 +8,7 @@ public class PlayerMovment : MonoBehaviour
     private Vector3 direction;
     public Sprite NORTHWEST, NORTH, NORTHEAST, WEST, EAST, SOUTHWEST, SOUTH, SOUTHEAST;
     public GameObject hitArea;
+    public LayerMask layerMask;
     private int facingDirection;
     private int i = 0;
     private int i2 = 0;
@@ -70,7 +71,10 @@ public class PlayerMovment : MonoBehaviour
         if (isDashing)
         {
             i2++;
-            colliderbox.enabled = !enabled; 
+            if (Physics2D.Raycast(transform.position,direction, 3f, layerMask) == true)
+                colliderbox.enabled = true;
+            else
+                colliderbox.enabled = !enabled;
             if (i2 == 10)
             {
                 
@@ -80,9 +84,6 @@ public class PlayerMovment : MonoBehaviour
                 dashingOnCooldown = true;
                 colliderbox.enabled = true;
             }
-                
-        
-
         }
     }
 
@@ -189,10 +190,7 @@ public class PlayerMovment : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
+
     public void dash()
     {
         if (dashingOnCooldown == false)

@@ -13,7 +13,7 @@ public class TreeBossHP : MonoBehaviour {
     public int hp;
 	// Use this for initialization
 	void Awake () {
-        hp = 20;
+        hp = 100;
         time = 0;
         take = false;
         onlyOne = 0;
@@ -24,13 +24,17 @@ public class TreeBossHP : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(hp);
+
         if(GetComponentInParent<TreeBossController>().playerInArea == true)
         {
             healthBar.SetActive(true);
             slider.value = hp;
         }
         else
+        {
+            healthBar.SetActive(false);
+        }
+        if(hp <= 0)
         {
             healthBar.SetActive(false);
         }
