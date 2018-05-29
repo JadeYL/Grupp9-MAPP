@@ -20,6 +20,7 @@ public class PlayerMovment : MonoBehaviour
     public bool isDashing = false;
     bool dashingOnCooldown = false;
     public float dashCooldown = 1.5f;
+    public int directionNumber;
     public Text dashButton;
 
 
@@ -143,6 +144,7 @@ public class PlayerMovment : MonoBehaviour
             {
                 //Debug.Log("NorthWest");
                 this.GetComponent<SpriteRenderer>().sprite = NORTHWEST;
+                directionNumber = 1;
                 switchArea(1);
             }
 
@@ -150,46 +152,54 @@ public class PlayerMovment : MonoBehaviour
             {
                 //  Debug.Log("North");
                 this.GetComponent<SpriteRenderer>().sprite = NORTH;
+                directionNumber = 2;
                 switchArea(2);
             }
             else if (jsMovement.angle > 22 && jsMovement.angle < 67)
             {
                 //    Debug.Log("NorthEast");
                 this.GetComponent<SpriteRenderer>().sprite = NORTHEAST;
+                directionNumber = 3;
                 switchArea(3);
             }
             else if (jsMovement.angle > -112 && jsMovement.angle < -67)
             {
                 //Debug.Log("West");
                 this.GetComponent<SpriteRenderer>().sprite = WEST;
+                directionNumber = 4;
                 switchArea(4);
             }
             else if (jsMovement.angle > 67 && jsMovement.angle < 112)
             {
                 //Debug.Log("East");
                 this.GetComponent<SpriteRenderer>().sprite = EAST;
+                directionNumber = 5;
                 switchArea(5);
             }
             else if (jsMovement.angle > -157 && jsMovement.angle < -112)
             {
                 //Debug.Log("SouthWest");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTHWEST;
+                directionNumber = 6;
                 switchArea(6);
             }
             else if (jsMovement.angle > 157 || jsMovement.angle <= (-157))
             {
                 //Debug.Log("South");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTH;
+                directionNumber = 7;
                 switchArea(7);
             }
             else if (jsMovement.angle > 112 && jsMovement.angle < 156)
             {
                 // Debug.Log("SouthEast");
                 this.GetComponent<SpriteRenderer>().sprite = SOUTHEAST;
+                directionNumber = 8;
                 switchArea(8);
             }
         }
     }
+    
 
     public void dash()
     {
