@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour
     private GameObject text;
     public float damage;
     bool attacking;
-    public float cd = 0.2f;
+    public float cd = 0.3f;
     bool onCD;
     float time;
     List<GameObject> targets = new List<GameObject>();
@@ -58,7 +58,7 @@ public class PlayerAttack : MonoBehaviour
                 attacking = false;
 
                 onCD = true;
-                cd = 0.2f;
+                cd = 0.3f;
             }
         }
         if (fireOrb == true)

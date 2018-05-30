@@ -13,7 +13,6 @@ public class TreeBossHP : MonoBehaviour {
     public int hp;
 	// Use this for initialization
 	void Awake () {
-        hp = 100;
         time = 0;
         take = false;
         onlyOne = 0;

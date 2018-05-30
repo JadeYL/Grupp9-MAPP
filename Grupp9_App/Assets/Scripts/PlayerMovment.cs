@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class PlayerMovment : MonoBehaviour
 {
     public float moveSpeed;
+    private Animator anim;
     public JoystickHandler jsMovement;
     private Vector3 direction;
     public Sprite NORTHWEST, NORTH, NORTHEAST, WEST, EAST, SOUTHWEST, SOUTH, SOUTHEAST;
@@ -20,7 +21,7 @@ public class PlayerMovment : MonoBehaviour
     public bool isDashing = false;
     bool dashingOnCooldown = false;
     public float dashCooldown = 1.5f;
-    public int directionNumber;
+    private int directionNumber;
     public Text dashButton;
 
 
@@ -29,6 +30,8 @@ public class PlayerMovment : MonoBehaviour
 
     void Update()
     {
+        anim.SetInteger("Direction", directionNumber);
+        Debug.Log(directionNumber);
         float oldX = transform.position.x;
         float oldY = transform.position.y;
     
@@ -58,21 +61,20 @@ public class PlayerMovment : MonoBehaviour
             dash();
 
         }
-
         if (direction.magnitude != 0 && isDashing == false)
         {
             transform.position += direction * moveSpeed;
             jsMovement.angle = Mathf.Atan2((transform.position.x - oldX), (transform.position.y - oldY)) * Mathf.Rad2Deg;
             calculateAngle();
         }
-
+       
     }
     void FixedUpdate()
     {
         if (isDashing)
         {
             i2++;
-            if (Physics2D.Raycast(transform.position,direction, 3f, layerMask) == true)
+            if (Physics2D.Raycast(transform.position,direction, 1f, layerMask) == true)
                 colliderbox.enabled = true;
             else
                 colliderbox.enabled = !enabled;
@@ -214,6 +216,7 @@ public class PlayerMovment : MonoBehaviour
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
         colliderbox = this.GetComponent<BoxCollider2D>();
+        anim = gameObject.GetComponent<Animator>();
     }
 }
 
