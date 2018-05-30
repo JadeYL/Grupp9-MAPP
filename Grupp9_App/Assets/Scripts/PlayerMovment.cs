@@ -20,6 +20,7 @@ public class PlayerMovment : MonoBehaviour
     Vector3 targetDash;
     public bool isDashing = false;
     bool dashingOnCooldown = false;
+    bool moving;
     public float dashCooldown = 1.5f;
     private int directionNumber;
     public Text dashButton;
@@ -29,8 +30,11 @@ public class PlayerMovment : MonoBehaviour
     public bool fireOrb;
 
     void Update()
+
     {
+
         anim.SetInteger("Direction", directionNumber);
+        anim.SetBool("Speed", moving);
         Debug.Log(directionNumber);
         float oldX = transform.position.x;
         float oldY = transform.position.y;
@@ -40,6 +44,14 @@ public class PlayerMovment : MonoBehaviour
         if (direction.x != 0 && direction.y != 0)
         {
            lastDirection = direction;
+        }
+        if(direction.x == 0 && direction.y == 0)
+        {
+            moving = false;
+        }
+        else
+        {
+            moving = true;
         }
         targetDash = direction * 2;
         if (dashingOnCooldown == true)
@@ -213,6 +225,7 @@ public class PlayerMovment : MonoBehaviour
     }
     void Start()
     {
+        moving = false;
         this.GetComponent<SpriteRenderer>().sprite = SOUTH;
         float cooldownTime = Time.deltaTime;
         colliderbox = this.GetComponent<BoxCollider2D>();
