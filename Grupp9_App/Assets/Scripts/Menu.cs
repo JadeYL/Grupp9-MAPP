@@ -22,4 +22,8 @@ public class Menu : MonoBehaviour {
     {
         Destroy(this.transform.parent.gameObject);
     }
+    public void restart()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
