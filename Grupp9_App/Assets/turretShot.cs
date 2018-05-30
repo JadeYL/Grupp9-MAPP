@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class turretShot : MonoBehaviour {
 
-	GameObject gameObject;
-    // Use this for initialization
-	void Start () {
-        gameObject = GetComponent<GameObject>;
+    public float facingRight;
+    public float speed = 1f;
+    public float bulletTimer = 10;
+    
+    void Start () {
+        
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-		
-	}
+        transform.Translate(Vector3.right * facingRight * Time.deltaTime * speed);
+        bulletTimer -= Time.deltaTime;
+        if (bulletTimer < 0)
+        {
+            Destroy(gameObject);
+
+        }
+
+    }
 }
